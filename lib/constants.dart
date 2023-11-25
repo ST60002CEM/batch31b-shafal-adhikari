@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 const kPrimaryColor = Color.fromARGB(255, 7, 143, 233);
 const kSecondaryColor = Color.fromARGB(255, 246, 143, 16);
 const kTextColor = Color.fromARGB(209, 12, 12, 12);
+const splashColor = Color.fromARGB(209, 255, 184, 184);
+const splashSecondColor = Color.fromARGB(209, 255, 244, 244);
 const kTextPColor = Color.fromARGB(255, 35, 35, 35);
 
 const backColor = Color.fromARGB(255, 249, 235, 235);

@@ -14,8 +14,8 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
         title: 'Wandroz',
         debugShowCheckedModeBanner: false,
-        initialRoute: '/',
         routes: routes,
+        initialRoute: '/splash',
         theme: theme());
   }
 }

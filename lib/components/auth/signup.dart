@@ -157,10 +157,7 @@ class _SignupState extends State<Signup> {
                 margin: const EdgeInsets.only(left: 20),
                 child: GestureDetector(
                   onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const LoginScreen()));
+                    Navigator.of(context).pushReplacementNamed('/login');
                   },
                   child: const Text(
                     "Already have an account? Login",
