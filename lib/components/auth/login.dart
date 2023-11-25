@@ -100,7 +100,7 @@ class _LoginState extends State<Login> {
               Center(
                 child: ElevatedButton(
                   onPressed: () {
-                    Navigator.of(context).pushReplacementNamed('/profile');
+                    Navigator.of(context).pushReplacementNamed('/feed');
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: kBtnColor,
