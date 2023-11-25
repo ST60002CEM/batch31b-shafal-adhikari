@@ -68,7 +68,7 @@ class _SplashScreenState extends State<SplashScreen> {
               SizedBox(
                 width: MediaQuery.of(context).size.width * 0.8,
                 child: const Text(
-                  'Unleash your travel experience with us.',
+                  'Share your travel experience with us.',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: kTextColor,
