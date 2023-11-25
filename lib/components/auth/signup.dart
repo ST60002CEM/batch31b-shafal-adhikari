@@ -128,7 +128,9 @@ class _SignupState extends State<Signup> {
               ),
               Center(
                 child: ElevatedButton(
-                  onPressed: () async {},
+                  onPressed: () {
+                    Navigator.of(context).pushReplacementNamed('/profile');
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: kBtnColor,
                     fixedSize: const Size(200, 50),
