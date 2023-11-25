@@ -18,6 +18,7 @@ dev_dependencies:
 flutter:
   assets:
     - assets/logo.png
+    - assets/cover.webp
   fonts:
     - family: Lato
       fonts:
