@@ -29,7 +29,6 @@ class _LoginState extends State<Login> {
       child: SingleChildScrollView(
         child: SizedBox(
           width: double.infinity,
-          height: MediaQuery.of(context).size.height * 0.5,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -37,14 +36,30 @@ class _LoginState extends State<Login> {
               const Text(
                 'Login',
                 style: TextStyle(
-                  fontSize: 38,
+                  fontSize: 42,
                   fontWeight: FontWeight.bold,
                   color: kTextPColor,
                 ),
               ),
+              const SizedBox(
+                height: 20,
+              ),
+              SizedBox(
+                width: MediaQuery.of(context).size.width * 0.8,
+                child: Center(
+                  child: Text(
+                    'Welcome back to the journey throughout the world',
+                    textAlign: TextAlign.center,
+                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                        color: kTextColor,
+                        fontSize: 18,
+                        height: 1.5,
+                        letterSpacing: 0.6),
+                  ),
+                ),
+              ),
               Card(
-                margin:
-                    const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                margin: const EdgeInsets.fromLTRB(10, 40, 10, 10),
                 child: TextFormField(
                   controller: idController,
                   decoration: const InputDecoration(
@@ -65,8 +80,7 @@ class _LoginState extends State<Login> {
                 ),
               ),
               Card(
-                margin:
-                    const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                margin: const EdgeInsets.fromLTRB(10, 10, 10, 30),
                 child: TextFormField(
                   controller: passController,
                   decoration: const InputDecoration(
@@ -82,22 +96,6 @@ class _LoginState extends State<Login> {
                   keyboardType: TextInputType.text,
                   obscureText: true,
                 ),
-              ),
-              // Align(
-              //   alignment: Alignment.centerRight,
-              //   child: TextButton(
-              //     onPressed: () {},
-              //     child: const Text(
-              //       'Forget Password?  ',
-              //       style: TextStyle(
-              //           fontSize: 20,
-              //           color: kTextPColor,
-              //           fontWeight: FontWeight.bold),
-              //     ),
-              //   ),
-              // ),
-              const SizedBox(
-                height: 30,
               ),
               Center(
                 child: ElevatedButton(
@@ -121,7 +119,65 @@ class _LoginState extends State<Login> {
                 ),
               ),
               const SizedBox(
+                height: 50,
+              ),
+              Center(
+                child: ElevatedButton.icon(
+                  onPressed: () async {},
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color.fromARGB(255, 9, 54, 131),
+                    fixedSize:
+                        Size(MediaQuery.of(context).size.width * 0.8, 50),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30.0),
+                    ),
+                  ),
+                  icon: const Icon(
+                    Icons.facebook,
+                    size: 24,
+                  ),
+                  label: isLoading
+                      ? const CircularProgressIndicator()
+                      : Text(
+                          'Login with Facebook',
+                          style: Theme.of(context)
+                              .textTheme
+                              .headlineSmall
+                              ?.copyWith(color: backColor, fontSize: 18),
+                        ),
+                ),
+              ),
+              const SizedBox(
                 height: 20,
+              ),
+              Center(
+                child: ElevatedButton.icon(
+                  onPressed: () async {},
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.black,
+                    fixedSize:
+                        Size(MediaQuery.of(context).size.width * 0.8, 50),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30.0),
+                    ),
+                  ),
+                  icon: const Icon(
+                    Icons.apple,
+                    size: 24,
+                  ),
+                  label: isLoading
+                      ? const CircularProgressIndicator()
+                      : Text(
+                          'Login with Apple',
+                          style: Theme.of(context)
+                              .textTheme
+                              .headlineSmall
+                              ?.copyWith(color: backColor, fontSize: 18),
+                        ),
+                ),
+              ),
+              const SizedBox(
+                height: 30,
               ),
               Container(
                 margin: const EdgeInsets.only(left: 20),

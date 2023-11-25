@@ -17,11 +17,11 @@ class LoginScreen extends StatelessWidget {
             children: [
               SizedBox(
                 width: double.infinity,
-                height: MediaQuery.of(context).size.height * 0.25,
+                height: MediaQuery.of(context).size.height * 0.1,
                 child: Column(
                   children: [
                     SizedBox(
-                      height: MediaQuery.of(context).size.height * 0.25,
+                      height: MediaQuery.of(context).size.height * 0.1,
                       width: MediaQuery.of(context).size.width * 0.4,
                       child: Image.asset(
                         "assets/logo.png",
@@ -33,7 +33,7 @@ class LoginScreen extends StatelessWidget {
               ),
               const SizedBox(
                 width: double.infinity,
-                height: 30,
+                height: 20,
               ),
               const Login()
             ],
