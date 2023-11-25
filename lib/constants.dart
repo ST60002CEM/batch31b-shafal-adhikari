@@ -14,7 +14,7 @@ const kColor3 = Color(0xFFFF99CB);
 
 const kNotSelectedColor = Color.fromARGB(217, 255, 254, 254);
 const kSelectedColor = Color(0x4DECECEC);
-const kBtnColor = Color.fromARGB(255, 1, 119, 178);
+const kBtnColor = Color.fromARGB(255, 223, 115, 7);
 
 const kContentColorLightTheme = Color(0xFF1D1D35);
 const kContentColorDarkTheme = Color(0xFFF5FCF9);
