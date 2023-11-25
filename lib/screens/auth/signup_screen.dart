@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wandroz/components/Signup.dart';
+import 'package:wandroz/components/auth/signup.dart';
 
 class SignupScreen extends StatelessWidget {
   const SignupScreen({Key? key}) : super(key: key);
