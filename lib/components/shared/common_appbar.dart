@@ -45,6 +45,43 @@ class CommonAppbar extends StatelessWidget {
           ),
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+        items: [
+          const BottomNavigationBarItem(
+            icon: Icon(Icons.home_outlined),
+            label: 'Home',
+          ),
+          const BottomNavigationBarItem(
+            icon: Icon(Icons.explore_outlined),
+            label: 'Explore',
+          ),
+          BottomNavigationBarItem(
+            icon: ClipOval(
+              child: Container(
+                width: 50,
+                height: 50,
+                decoration: const BoxDecoration(color: Colors.amber),
+                child: const Icon(
+                  Icons.add,
+                  size: 30,
+                  color: Color.fromARGB(255, 87, 87, 87),
+                ),
+              ),
+            ),
+            label: 'Post',
+          ),
+          const BottomNavigationBarItem(
+            icon: Icon(Icons.explore_outlined),
+            label: 'Explore',
+          ),
+          const BottomNavigationBarItem(
+            icon: Icon(Icons.face_2_outlined),
+            label: 'Profile',
+          ),
+        ],
+      ),
       body: Padding(
         padding: const EdgeInsets.fromLTRB(20, 0, 20, 30),
         child: child,
