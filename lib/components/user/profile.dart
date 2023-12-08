@@ -64,7 +64,7 @@ class _ProfileState extends State<Profile> {
                 Center(
                   child: SizedBox(
                     width: MediaQuery.of(context).size.width,
-                    height: MediaQuery.of(context).size.height * 0.5,
+                    height: MediaQuery.of(context).size.height * 0.45,
                     child: const Column(
                       children: [
                         SizedBox(
@@ -72,7 +72,7 @@ class _ProfileState extends State<Profile> {
                         ),
                         SizedBox(
                           width: double.infinity,
-                          height: 55,
+                          height: 30,
                           child: TabBar(
                             labelColor: Colors.white,
                             unselectedLabelColor: kTextColor,
