@@ -7,7 +7,7 @@ const splashColor = Color.fromARGB(209, 255, 184, 184);
 const splashSecondColor = Color.fromARGB(209, 255, 244, 244);
 const kTextPColor = Color.fromARGB(255, 35, 35, 35);
 
-const backColor = Color.fromARGB(255, 249, 235, 235);
+const backColor = Color.fromARGB(255, 242, 242, 242);
 const kColor1 = Color.fromARGB(255, 1, 119, 178);
 const kColor2 = Color(0xFF6633CC);
 const kColor3 = Color(0xFFFF99CB);
